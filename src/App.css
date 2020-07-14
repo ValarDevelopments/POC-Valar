@@ -39,11 +39,14 @@
 
 .App-main {
   background-color: #131925;
-  min-height: 100vh;
+  min-height: 72vh;
   color: white;
 }
 
 .App-center {
+  text-align: center;
+  font-size: 5vh;
+  padding-top: 20vh;
   margin-left: 30vh;
   margin-right: 30vh;
 }
