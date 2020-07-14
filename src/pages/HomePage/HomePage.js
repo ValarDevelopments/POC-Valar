@@ -12,7 +12,7 @@ function HomePage() {
 
       <main className="App-main">
         <div className="App-center">
-          <div>Bienvenidos a Valar Morghulis!!!</div>
+          <h1>Bienvenidos a Valar Morghulis!!!</h1>
           <Divider />
           <Link to="/login">
             <Button inverted>LogIn</Button>

@@ -44,15 +44,20 @@
 }
 
 .App-center {
-  text-align: center;
-  font-size: 5vh;
-  padding-top: 20vh;
+  padding-top: 4vh;
   margin-left: 30vh;
   margin-right: 30vh;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.LogIn-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
