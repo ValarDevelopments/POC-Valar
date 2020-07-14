@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../Components/header";
 import Footer from "../../Components/footer";
-import { Button, Divider, Form, Input } from "semantic-ui-react";
+import { Button, Divider, Grid, Input } from "semantic-ui-react";
 import "../../App.css";
 
 function LogIn() {
@@ -14,8 +14,8 @@ function LogIn() {
           <h1 style={{ textAlign: "center" }}>LOG IN</h1>
           <Divider />
           <br />
-          <Form className="LogIn-form">
-            <Form.Field width="4">
+          <Grid centered>
+            <Grid.Row>
               <Input
                 inverted
                 size="large"
@@ -23,8 +23,8 @@ function LogIn() {
                 iconPosition="left"
                 placeholder="UserName"
               />
-            </Form.Field>
-            <Form.Field width="4">
+            </Grid.Row>
+            <Grid.Row>
               <Input
                 inverted
                 size="large"
@@ -32,10 +32,11 @@ function LogIn() {
                 iconPosition="left"
                 placeholder="Password"
               />
-            </Form.Field>
+            </Grid.Row>
             <Button type="submit">Log in</Button>
-          </Form>
+          </Grid>
         </div>
+        <br />
       </main>
       <Footer />
     </div>

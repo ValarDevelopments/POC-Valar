@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../Components/header";
 import Footer from "../../Components/footer";
-import { Button, Divider, Form, Input } from "semantic-ui-react";
+import { Button, Divider, Grid, Input } from "semantic-ui-react";
 import "../../App.css";
 
 function SignIn() {
@@ -14,44 +14,55 @@ function SignIn() {
           <h1 style={{ textAlign: "center" }}>SIGN IN</h1>
           <Divider />
           <br />
-          <Form>
-            <Form.Group widths={3}>
-              <Form.Input
-                inverted
-                size="large"
-                icon="chess knight"
-                iconPosition="left"
-                placeholder="UserName"
-              />
-              <Form.Input
-                inverted
-                size="large"
-                icon="mail square"
-                iconPosition="left"
-                placeholder="Email"
-              />
-            </Form.Group>
-            <Form.Group widths={3}>
-              <Form.Input
-                inverted
-                size="large"
-                icon="unlock alternate"
-                iconPosition="left"
-                type="password"
-                placeholder="Password"
-              />
-              <Form.Input
-                inverted
-                size="large"
-                icon="unlock alternate"
-                iconPosition="left"
-                placeholder="Repeat Password"
-              />
-            </Form.Group>
+          <Grid centered>
+            <Grid.Row centered columns={4}>
+              <Grid.Column>
+                <Input
+                  inverted
+                  size="large"
+                  icon="chess knight"
+                  iconPosition="left"
+                  placeholder="UserName"
+                />
+              </Grid.Column>
+
+              <Grid.Column>
+                <Input
+                  inverted
+                  size="large"
+                  icon="mail square"
+                  iconPosition="left"
+                  placeholder="Email"
+                />
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row centered columns={4}>
+              <Grid.Column>
+                <Input
+                  inverted
+                  size="large"
+                  icon="unlock alternate"
+                  iconPosition="left"
+                  type="password"
+                  placeholder="Password"
+                />
+              </Grid.Column>
+
+              <Grid.Column>
+                <Input
+                  inverted
+                  size="large"
+                  icon="unlock alternate"
+                  iconPosition="left"
+                  placeholder="Repeat Password"
+                />
+              </Grid.Column>
+            </Grid.Row>
 
             <Button type="submit">Sign in</Button>
-          </Form>
+          </Grid>
         </div>
+        <br />
       </main>
       <Footer />
     </div>
