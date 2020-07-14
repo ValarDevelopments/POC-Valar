@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import logo from "../Images/fairy-shield.png";
 import "../App.css";
 
@@ -10,7 +11,10 @@ class Header extends Component {
   render() {
     return (
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Link to="/">
+          <img src={logo} className="App-logo" alt="logo" />
+        </Link>
+
         <div>Valar Development</div>
       </header>
     );
