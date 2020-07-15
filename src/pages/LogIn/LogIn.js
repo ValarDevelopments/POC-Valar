@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Components/header";
 import Footer from "../../Components/footer";
 import { Button, Divider, Grid, Input } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 import "../../App.css";
 
 function LogIn() {
@@ -33,7 +34,9 @@ function LogIn() {
                 placeholder="Password"
               />
             </Grid.Row>
-            <Button type="submit">Log in</Button>
+            <Link to="/player">
+              <Button type="submit">Log in</Button>
+            </Link>
           </Grid>
         </div>
         <br />
