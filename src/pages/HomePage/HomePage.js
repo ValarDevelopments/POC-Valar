@@ -17,13 +17,13 @@ function HomePage() {
           <div>
             <Form>
               <Form.Group>
-                <Link to="/login">
+                <Link to="/auth/login">
                   <Button inverted color="teal">
                     LogIn
                   </Button>
                 </Link>
 
-                <Link to="/signin">
+                <Link to="/auth/signin">
                   <Button inverted color="olive">
                     SignIn
                   </Button>

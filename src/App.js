@@ -11,8 +11,8 @@ function App() {
       <Switch>
         {/*All Routes to every tab in the Dashboard*/}
         <Route path="/" exact component={HomePage} />
-        <Route path="/login" component={LogIn} />
-        <Route path="/signin" component={SignIn} />
+        <Route path="/auth/login" component={LogIn} />
+        <Route path="/auth/signin" component={SignIn} />
         <Route path="/player" component={PlayerHome} />
       </Switch>
     </Router>
