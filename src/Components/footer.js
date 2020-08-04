@@ -9,7 +9,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="App-footer">
-        <div>Curro Casado - Miguel Rodin</div>
+        <div>David Blanco - Curro Casado - Miguel Rodin</div>
       </footer>
     );
   }
